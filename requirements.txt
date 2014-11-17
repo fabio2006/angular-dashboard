@@ -1,0 +1,36 @@
+
+
+Sales Lead Card
+*many people inside
+*for each person:
+Picture
+Phone number
+Email
+Social media links
+*historical sales (any past sales)
+*list transactions, item, amount, date
+*contact feed
+inside: phone calls, text messages, emails, and social media messages
+will give pipeline status during each of those messages
+store file query for contracts, quotes, and info packets
+
+Pipeline
+Lead - contact info, miscellaneous facts, and prior referrals (associations)
+Cold Call - status of that cold call, were you able to get in contact, hot lead?
+If hot, goes to "Prospects" Queue
+In "Prospects"
+Then add reports to that person to go along with the status
+Status warm/hot depending on how ready to pull trigger
+Ranked by revenues
+Next "closing":
+Finance/insurance forms/applications
+Approval status with credit reports
+Contracts and terms with interactive editing
+Billing integration 
+Upon sale completion, delivery, it will queue you up with a detail form: 
+useful life with sale - ex: hit him back in 5 years
+warranties
+taxes
+customer service guarantees
+numbers on sales (profits on revenues and any commissions that will be payed out with customer satisfaction survey and status)
+any referrals that they can put back into system
