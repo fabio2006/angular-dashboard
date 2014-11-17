@@ -69,6 +69,54 @@
 	mainApp.controller('mainController', function($scope) {
 		$scope.title = 'Welcome to Contastic';
 		$scope.slogan = 'Staying in Touch Made Easy';
+		$scope.barchart = {
+		    data: [
+				{ y: 'Jan', a: 100, b: 90 },
+				{ y: 'Feb', a: 75,  b: 65 },
+				{ y: 'Mar', a: 50,  b: 40 },
+				{ y: 'Apr', a: 75,  b: 65 },
+				{ y: 'May', a: 50,  b: 40 },
+				{ y: 'Jun', a: 75,  b: 65 },
+				{ y: 'Jul', a: 30, b: 25 },
+				{ y: 'Aug', a: 40, b: 35 },
+				{ y: 'Sep', a: 20, b: 15 },
+				{ y: 'Oct', a: 50, b: 40 },
+				{ y: 'Nov', a: 80, b: 55 }
+		    ],
+		    xkey: 'y',
+		    ykeys: ['a', 'b'],
+		    gridTextColor: '#fff',
+		    labels: ['Hot', 'Warm'],
+		    barColors: ['#fff', '#cfcfcf']
+		};
+
+		$scope.linechart = {
+		    data: [
+		      { y: '2006', a: 30, b: 10 },
+		      { y: '2007', a: 45,  b: 15 },
+		      { y: '2008', a: 50,  b: 5 },
+		      { y: '2009', a: 60,  b: 35 },
+		      { y: '2010', a: 40,  b: 20 },
+		      { y: '2011', a: 60,  b: 30 },
+		      { y: '2012', a: 20, b: 10 }
+		    ],
+		    xkey: 'y',
+		    ykeys: ['a', 'b'],
+		    gridTextColor: '#fff',
+		    labels: ['Series A', 'Series B'],
+		    lineColors: ['#fff', '#ccc']
+		};
+
+		$scope.donutchart = {
+			data: [
+				{label: "Upset", value: 12},
+				{label: "Happy", value: 30},
+				{label: "Content", value: 20}
+			],
+			labelColor: '#fff',
+  			colors: ['#fff','#efefef','#cfcfcf']
+		};
+
 	});
 
 	mainApp.controller('leadsController', function($scope) {
@@ -114,6 +162,69 @@
 	mainApp.controller('adminController', function($scope) {
 		$scope.title = 'Admin Panel for Managers and Configs';
 		$scope.slogan = 'Staying in Touch Made Easy';
+	});
+
+	mainApp.directive('barchart', function(){
+	  
+	  function createChart(el_id, options) {
+	    options.element = el_id;
+	    var r = new Morris.Bar(options);
+	    return r;
+	  }
+
+	  return {
+	    restrict: 'E',
+	    scope: {
+	      options: '='
+	    },
+	    replace: true,
+	    template: '<div></div>',
+	    link: function link(scope, element, attrs) {
+	      return createChart(attrs.id, scope.options);
+	    }
+	  };
+	});
+
+	mainApp.directive('linechart', function() {
+
+	    function createChart(el_id, options) {
+	      options.element = el_id;
+	      var r = new Morris.Line(options);
+	      return r;
+	    }
+
+	    return {
+	      restrict: 'E',
+	      scope:  {
+	        options: '='
+	      },
+	      replace: true,
+	      template: '<div></div>',
+	      link: function(scope, element, attrs) {
+	        return createChart(attrs.id, scope.options)
+	      }
+	    }
+	});
+
+	mainApp.directive('donutchart', function() {
+
+	    function createChart(el_id, options) {
+	      options.element = el_id;
+	      var r = new Morris.Donut(options);
+	      return r;
+	    }
+
+	    return {
+	      restrict: 'E',
+	      scope:  {
+	        options: '='
+	      },
+	      replace: true,
+	      template: '<div></div>',
+	      link: function(scope, element, attrs) {
+	        return createChart(attrs.id, scope.options)
+	      }
+	    }
 	});
 
   // mainApp.factory('Job',function($resource){

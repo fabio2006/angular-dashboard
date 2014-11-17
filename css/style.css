@@ -17,11 +17,11 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #68dff0;
+    background: #0081A0;
     color: #fff;
 }
 ::-moz-selection {
-    background: #68dff0;
+    background: #0081A0;
     color: #fff;
 }
 
@@ -32,7 +32,7 @@ a, a:hover, a:focus {
 
 /* Bootstrap Mods */
 .modal-header {
-	background: #68dff0;
+	background: #0081A0;
 }
 
 .modal-title {
@@ -64,7 +64,7 @@ a, a:hover, a:focus {
 /*Theme Backgrounds*/
 
 .bg-theme {
-	/*background-color: #68dff0;*/
+	/*background-color: #0081A0;*/
     background-color: none!important;
 }
 
@@ -84,7 +84,7 @@ a, a:hover, a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: #68dff0;
+  background-color: #0081A0;
   border-color: #48bcb4;
 }
 .btn-theme:hover,
@@ -198,11 +198,11 @@ hr {
 /* Colors Configuration */
 
 .label-theme {
-	/*background-color: #68dff0;*/
+	/*background-color: #0081A0;*/
 }
 
 .bg-theme {
-	/*background-color: #68dff0;*/
+	/*background-color: #0081A0;*/
 }
 
 ul.top-menu > li > .logout {
@@ -316,7 +316,7 @@ ul.sidebar-menu li ul.sub li a:hover {
 }
 
 ul.sidebar-menu li ul.sub li.active a {
-    color: #68dff0;
+    color: #0081A0;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -436,7 +436,7 @@ a.logo:hover, a.logo:focus {
 }
 
 a.logo span {
-    color: #68dff0;
+    color: #0081A0;
 }
 
 
@@ -511,7 +511,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .dropdown-menu.extended li p.green {
-    background-color: #68dff0;
+    background-color: #0081A0;
     color: #fff;
 }
 
@@ -715,9 +715,9 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     border-top-color: #FCB322 !important;
 }
 .notify-arrow-green {
-    border-color: transparent transparent #68dff0;
-    border-bottom-color: #68dff0 !important;
-    border-top-color: #68dff0 !important;
+    border-color: transparent transparent #0081A0;
+    border-bottom-color: #0081A0 !important;
+    border-top-color: #0081A0 !important;
 }
 
 
@@ -813,7 +813,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .ds a {
-	color: #68dff0;
+	color: #0081A0;
 }
 
 /* LINE ICONS CONFIGURATION */
@@ -868,30 +868,26 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .border-head h3 {
     margin-top: 20px;
-    margin-bottom: 20px;
 	margin-left: 15px;	
     padding-bottom: 5px;
     font-weight: normal;
     font-size: 18px;
     display: inline-block;
     width: 100%;
-    font-weight: 700;
-    color: #989898;
-}
+    font-weight: 700;}
 
 .custom-bar-chart {
-    height: 290px;
+    height: 200px;
     margin-top: 20px;
     margin-left: 20px;
     position: relative;
-    border-bottom: 1px solid #c9cdd7;
 }
 
 .custom-bar-chart .bar {
     height: 100%;
     position: relative;
     width: 6%;
-    margin: 0px 4%;
+    margin: 0px 1%;
     float: left;
     text-align: center;
     z-index: 10;
@@ -908,8 +904,8 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .custom-bar-chart .bar .value {
     position: absolute;
     bottom: 0;
-    background: #ff865c;
-    color: #68dff0;
+    background: #fff;
+    color: #CFCFCF;
     width: 100%;
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
@@ -921,15 +917,48 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     transition: all .3s ease;
 }
 
-
+.morris-default-style{
+    display: none;
+    visibility: hidden;
+}
 
 .custom-bar-chart .bar .value:hover {
-    background: #2f2f2f;
+    background: #CFCFCF;
     color: #fff;
 }
 
+.bar-holder{
+    position: absolute;
+    left: 30px;
+    width: 100%;
+    height: 175px;
+}
+
+.sm-bench{
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.sm-bench p{
+    margin-bottom: 0;
+}
+.sm-bench h2{
+    margin-top: 0;
+}
+
+.sm-com{
+    padding-top: 20px;
+}
+
+.sm-com p{
+    margin-bottom: 0;
+}
+.sm-com h2{
+    margin-top: 0;
+}
+
 .y-axis {
-    color: #555555;
+    color: #fff;
     position: absolute;
     text-align: left;
     width: 100%;
@@ -939,7 +968,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .y-axis li {
     border-top: 1px dashed #dbdce0;
     display: block;
-    height: 58px;
+    height: 35px;
     width: 100%;
 }
 
@@ -966,19 +995,13 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	font-size: 16px;
 }
 
-/* *************************************************************************************
-PANELS CONFIGURATIONS
-*************************************************************************************** */
-
 /*Panel Size*/
 
 .pn {
 	height: 250px;
-	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .pn:hover {
-	box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
 	
 }
 
@@ -1043,7 +1066,7 @@ PANELS CONFIGURATIONS
 /* green panel */
 .green-panel {
 	text-align: center;
-	background: #68dff0;
+	background: #0081A0;
 }
 .green-panel .green-header {
 	background: #43b1a9;
@@ -1087,7 +1110,7 @@ PANELS CONFIGURATIONS
 }
 
 .white-panel i {
-	color: #68dff0;
+	color: #0081A0;
 	padding-right: 4px;
 	font-size: 14px;
 }
@@ -1578,12 +1601,12 @@ div.zabuto_calendar div.legend span.badge {
   display: none;
 }
 .steps input[type=submit]{
-  background: #f1783c;
+  background: none;
   border: none;
   padding: 0px;
   margin: 0 auto;
   width: 100%;
-  height: 55px;
+  height: 50px;
   color: white;
   text-transform: uppercase;
   font-weight: 900;
@@ -1593,16 +1616,16 @@ div.zabuto_calendar div.legend span.badge {
   transition: background 0.5s ease
 }
 .steps input[type=submit]:hover{
-  background: #8fde9c;
+  background: #fff;
+  color: #0081A0
 }
 .steps label{
-  background: #393D40;
-  height: 65px;
-  line-height: 65px;
+  height: 50px;
+  line-height: 50px;
   width: 100%;
   display: block;
-  border-bottom: 1px solid #44494e;
-  color: #889199;
+  border-bottom: 1px solid #fff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 11px;
@@ -1618,13 +1641,13 @@ div.zabuto_calendar div.legend span.badge {
   height: 12px;
   display: block;
   position: absolute;
-  margin: 26px 0px 0px 18px;
+  margin: 20px 0px 0px 18px;
   border-radius: 100%;
   transition: border 0.7s ease
 }
 .steps label:hover{
-  background: #2B2E30;
-  color: #46b7e5
+  background: #fff;
+  color: #0081A0
 }
 .steps label:hover:before{
   border: 1px solid #46b7e5;
@@ -1632,8 +1655,8 @@ div.zabuto_calendar div.legend span.badge {
 #op1:checked ~ label[for=op1]:before,
 #op2:checked ~ label[for=op2]:before,
 #op3:checked ~ label[for=op3]:before{
-  border: 2px solid #96c93c;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNpinHLMhgEHKADia0xQThIQs6JJ9gPxZhYQAcS6QHwDiI8hSYJAC0gBPxDLAvFcIJ6JJJkDxFNBVtgBcQ8Qa6BLghgwN4A4a9ElQYAFSj8C4mwg3o8sCQIAAQYA78QTYqnPZuEAAAAASUVORK5CYII=') no-repeat center center;
+  border: 2px solid #fff;
+  background: #fff;
 }
 
 /* profile */
@@ -1666,7 +1689,7 @@ div.zabuto_calendar div.legend span.badge {
 	font-weight: 900;
 }
 .profile-01 {
-	background: #68dff0;
+	background: #0081A0;
 	height: 50px;
 }
 .profile-01:hover {
@@ -1713,7 +1736,7 @@ div.zabuto_calendar div.legend span.badge {
 	color: #cdcdcd;
 }
 .pr2-social a:hover {
-	color: #68dff0;
+	color: #0081A0;
 }
 .pr2-social i {
 	margin-top: 15px;
@@ -1769,7 +1792,7 @@ div.zabuto_calendar div.legend span.badge {
     font-size: 12px;
 }
 .panel.terques-chart .chart-tittle .value a:hover, .panel.terques-chart .chart-tittle .value a.active {
-    color: #68dff0;
+    color: #0081A0;
     font-size: 12px;
 }
 .panel.terques-chart .chart-tittle {
@@ -1824,7 +1847,7 @@ div.zabuto_calendar div.legend span.badge {
   display: block;
   position: relative;
   overflow: hidden;
-  background-color: #68dff0;
+  background-color: #0081A0;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -1844,7 +1867,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 
 .project:hover .photo-wrapper {
-  background-color: #68dff0;
+  background-color: #0081A0;
 	background-image:url(../images/zoom.png);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -2085,7 +2108,7 @@ label {
 	margin: 0;
 	padding: 25px 20px;
 	text-align: center;
-	background: #68dff0;
+	background: #0081A0;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	color: #fff;
