@@ -878,7 +878,6 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .custom-bar-chart {
     height: 200px;
-    margin-top: 20px;
     margin-left: 20px;
     position: relative;
 }
@@ -935,8 +934,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .sm-bench{
-    padding-bottom: 30px;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .sm-bench p{
@@ -947,7 +945,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .sm-com{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .sm-com p{
