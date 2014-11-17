@@ -69,6 +69,7 @@
 	mainApp.controller('mainController', function($scope) {
 		$scope.title = 'Welcome to Contastic';
 		$scope.slogan = 'Staying in Touch Made Easy';
+		$scope.navStatus = false;
 		$scope.barchart = {
 		    data: [
 				{ y: 'Jan', a: 100, b: 90 },

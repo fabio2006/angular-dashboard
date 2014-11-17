@@ -56,7 +56,7 @@
 <body ng-controller="mainController">
 <section id="container">
       <header class="header black-bg">
-              <div class="sidebar-toggle-box" ng-click="dbMenu = !dbMenu">
+              <div class="sidebar-toggle-box" ng-click="navStatus = !navStatus">
                   <div class="fa fa-reorder"></div>
               </div>
             <a href="#" class="logo">contastic</a>
@@ -200,8 +200,8 @@
               </ul>
             </div>
         </header>
-      <aside ng-show="dbMenu">
-          <div id="sidebar"  class="nav-collapse ">
+      <aside>
+          <div id="sidebar"  class="nav-collapse" ng-class="{'nav-open' : navStatus, 'nav-close' : !navStatus}">
               <ul class="sidebar-menu" id="nav-accordion">
                   <p class="centered"><a href="#"><img src="images/ui-chelsea.jpg" class="img-circle" width="60"></a></p>
                   <h5 class="centered">Chelsea Schultz</h5>
@@ -251,7 +251,9 @@
               </ul>
           </div>
       </aside>
-      <section id="main-content" ng-view></section>
+      <section id="main-content" ng-class="{'main-open' : navStatus, 'main-close' : !navStatus}">
+        <div ng-view></div>
+      </section>
       <footer class="site-footer">
           <div class="text-center">
               2014 - Leo Schultz

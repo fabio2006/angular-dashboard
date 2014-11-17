@@ -386,7 +386,7 @@ ul.sidebar-menu li a.active i {
 
 /* Main Content Area */
 #main-content {
-    margin-left: 210px;
+
 }
 
 .header, .footer {
@@ -934,7 +934,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .sm-bench{
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 .sm-bench p{
@@ -981,6 +981,21 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     width: 40px;
 }
 
+.main-open{
+    margin-left: 210px;
+}
+
+.main-close{
+    margin-left: 0px;
+}
+
+.nav-open{
+    margin-left: 0px;
+}
+
+.nav-close{
+    margin-left: -210px;
+}
 
 /*Donut Chart Main Page Conf*/
 .donut-main {
